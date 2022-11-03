@@ -1,0 +1,129 @@
+.header{
+    
+    background-image: linear-gradient(180deg,rgba(0,0,0,.7) 10%,transparent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    height: 68px;
+    transition: 0.9s ease-in-out 0.08s;
+}
+.transparent{
+    background-color: rgb(20, 20, 20);
+    transition: linear 0.4s;
+}
+.logo{
+    width: 100px;
+}
+
+.avatar{
+    height: 36px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.CaretDown{
+    margin-left: 5px;
+    transition: ease 0.2s;
+}
+.Caret{
+    transition: ease 0.2s;
+    transform: rotate(180deg);
+}
+.avatar-Caret{
+    display: flex;
+    align-items: center;
+}
+.bar{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 4%;
+}
+.navigate{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 170px;
+}
+li{
+    display: inline-block;
+    margin: auto 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+li:hover{
+    color: gray;
+    transition: .5s;
+    
+}
+.poll{
+    position: fixed;
+    z-index: 2000;
+    right: 50px;
+    top: 50px;
+    margin: 0;
+    padding: 0;
+    color: white;
+    
+    background-color: transparent;
+    min-height: 300px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.icon-3{
+    margin-left: 90%;
+    rotate: 180deg;
+    scale: 1.5;
+}
+.poll-1{
+    background-color: rgba(0, 0, 0,.8);
+    border: solid 2px rgba(0, 0, 0,.59);
+    width: 100%;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:justify;
+    align-content: space-between;
+    
+}
+.poll h1,h2{
+    color: white;
+    width: 100%;
+}
+.icon-1{
+    height: 50px !important;
+    margin-right: 30px;
+    scale: 1.6;
+    z-index: 101;
+}
+.motionDiv{
+    z-index: 103;
+}
+.searchInput{
+    margin: auto 20px;
+    background-color: rgba(0, 0, 0,.8);
+    border: solid 3px rgba(253, 252, 252, 0.2);
+    width: 300px;
+    color: rgb(216, 209, 209) !important;
+    border-radius: 4px;
+    height: 50px;
+    line-height: 50px;
+    padding: auto 10px;
+    padding-left: 20px;
+    position: relative;
+    z-index: 99;
+    right: -95px;
+    
+    
+}

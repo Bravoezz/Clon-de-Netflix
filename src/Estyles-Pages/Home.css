@@ -1,0 +1,12 @@
+.Home{
+    min-height: 100vh;
+    background-color: rgba(20,20,20,255);
+}
+.nada{
+    height: 52px;
+}
+.contain-rows{
+    position: relative;
+    bottom: 180px;
+    z-index: 1000;
+}
