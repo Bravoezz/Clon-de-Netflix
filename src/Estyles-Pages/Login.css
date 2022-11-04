@@ -1,3 +1,5 @@
+
+
 .login{
     background-image: linear-gradient(0deg,rgba(0,0,0,.9) ,rgba(0,0,0,.3) 30%,rgba(0,0,0,.9)),url('https://browsecat.net/sites/default/files/netflix-background-128505-385456-9916359.png');
     height: 100vh;
@@ -42,6 +44,70 @@
     margin: 0px 47px 20px;
    
 }
+@media screen and (max-width: 660px){
+    #h1{
+        font-size: 40px;
+        margin: auto;
+        margin-bottom: 20px;
+        text-align:center;
+
+    }
+    .log1 > h2{
+        font-size: 20px;
+        margin: auto;
+    }
+    
+    .logoo{
+        margin: 0px;
+        width: 100px;
+        top: 18px;
+        left: 15px;
+    }
+    img.lenguage{
+       width: auto;
+        height: 30px;
+        top: 15px;        
+        left: 160px;
+    }
+    button.netbutton{
+        
+        height: 30px;
+        margin: 0px;
+        position: fixed;
+        top: 15px;
+        left: 270px;
+    }
+    div.div-log{
+        margin: 30px auto;
+       width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    div#div-log1{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    div.MuiInputBase-root{
+        width: 300px;
+        height: 50px;
+        border-radius: 10px;
+    }
+    button.netbutton2{
+        width: 200px;
+        font-size: 20px;
+        border-radius: 10px !important;        
+    }
+    div.card-login{
+        margin: auto 10px;
+        margin-top: 0px;
+        margin-bottom: 100px;
+        padding: 10px 5px;
+    }
+    
+
+}
+ 
 .lenguage{
     height: 35px;
     width: 95px;
@@ -78,6 +144,7 @@
     margin-top: 15px;
     font-size: 30px !important;
 }
+
 .netbutton2 > img{
     height: 35px;
     margin-top: 5px;
@@ -111,3 +178,4 @@
     margin-top: 15px;
     
 }
+

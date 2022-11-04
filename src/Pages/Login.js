@@ -19,12 +19,12 @@ function Login ({nombre}) {
             <div className='card-login'>
                 {
                     log? <div className='log1'>
-                        <h1>Películas ilimitadas, programas de TV y más.</h1>
-                        <h2>Mira en cualquier lugar. Cancele en cualquier momento.</h2>
+                        <h1 id='h1'>Películas ilimitadas, programas de TV y más.</h1>
+                        <h2 id="h2">Mira en cualquier lugar. Cancele en cualquier momento.</h2>
                         <div className='div-log'>
                             <h3>¿Listo para mirar? Ingrese su correo electrónico para crear o reiniciar su membresía.</h3>
-                            <div className='div-log1'>
-                            <LogIn placeholder='Dirección de correo electrónico' className='LogIn'/>
+                            <div id='div-log1'>
+                            <LogIn placeholder='Dirección de correo electrónico' id='id' className='LogIn'/>
                             <NetButton onClick={()=> setLog(!log)} className='netbutton2'><span>Empezar</span><img src={next} alt='cositas'/></NetButton>
                             </div>
                         </div>

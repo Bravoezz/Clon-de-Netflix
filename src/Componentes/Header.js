@@ -113,12 +113,14 @@ const Header = () => {
         }}
         className='poll'>
         <AiOutlineCaretDown className='icon-3'/>
-       <motion.div 
+       <div 
         className='poll-1'
         >
+       <div><img className="avatar uno" alt="cosas" src={profile}/></div>
+        <div>
         <h5>{state.email}</h5>
-        <h6>{state.password}</h6>
-      </motion.div></motion.div>)
+        <h6>{state.password}</h6></div>
+      </div></motion.div>)
      }
       </div>
      
