@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Header from '../Componentes/Header';
 import Banner from '../Componentes/Banner.js';
 import requests from '../Requests';
@@ -10,14 +10,15 @@ import { useSelector } from 'react-redux';
 
 const Home = () => {
   const email = useSelector((state)=> state.email);
-
+  const [screen,setScreen] = useState(null)
   React.useEffect(()=>{
     console.log(email)
+    if(window.screen < 660) setScreen(window.screen);
   },[email])
   return (
     <div className='Home'>
         
-        <Header />
+        <Header screen={screen} />
         <Banner />
         <div className='contain-rows'>
         <Rows title={'Originales de Netflix'} genero_url={requests.fetchNetflixOriginals} esPrimero/>

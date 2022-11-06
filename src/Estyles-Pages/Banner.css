@@ -1,0 +1,28 @@
+@media screen and (max-width: 660px) {
+    #banner-contain{
+        height: 400px;
+        padding: 0 100%;
+        background-position: right 200px bottom 0px  !important;
+        background-repeat: no-repeat;
+        
+    }
+    #buttons{
+        display: flex;
+        flex-direction: row;
+        margin-top: 5px;
+
+    }
+    button{
+        height: 40px;
+        width: 150px;
+    }
+    div #title{
+        margin-bottom: 0px !important;
+        padding: 0px;
+        font-size: 30px !important;
+        top: 20px;
+    }
+    #text{
+        font-size: 15px;
+    }
+}

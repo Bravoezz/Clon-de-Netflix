@@ -46,6 +46,7 @@ const Form = () => {
             placeholder='Contraceña'
             className='input'/>
             <NetButton
+            className='net'
             type='submit'>Inicia sesión</NetButton>
           </form>
         </div>

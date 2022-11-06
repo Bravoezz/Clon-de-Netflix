@@ -3,6 +3,7 @@ import instance from '../axios';
 import { makeStyles,Button } from '@material-ui/core';
 import axios from 'axios';
 import requests from '../Requests';
+import '../Estyles-Pages/Banner.css'
 
 
 const Banner = () => {
@@ -27,6 +28,7 @@ const Banner = () => {
   
   return (
     <div className={classes.root}
+    id='banner-contain'
       style={{
         backgroundImage: `url("https://image.tmdb.org/t/p/original${pelicula?.backdrop_path}")`,
         position: 'relative',
@@ -37,18 +39,22 @@ const Banner = () => {
       }}
     >
       <div className={classes.content}>
-        <div style={{
+        <div 
+        id='title'
+        style={{
           marginBottom:"25px",
           fontSize:"50px",
           textShadow:'2px 2px 4px rgb(0 0 0 / 60%)',
           }}>
           {pelicula?.title || pelicula?.name}
           </div>
-        <div className={classes.buttons}>
+        <div id='buttons' className={classes.buttons}>
           <Button >play</Button>
           <Button >My list</Button>
         </div>
-        <div  style={{marginTop:"18px"}} className={classes.text}>
+        <div 
+        id='text'
+         style={{marginTop:"18px"}} className={classes.text}>
           {
             truncar(pelicula?.overview,160)
           }

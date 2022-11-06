@@ -11,7 +11,7 @@ import {CgSearch} from 'react-icons/cg'
 import { InputBase } from '@material-ui/core';
 
 
-const Header = () => {
+const Header = ({screen}) => {
     const [show,setShow] = React.useState(false);
     const Navigate = useNavigate();
     const [pollito, setPollito] = React.useState(false);
@@ -37,14 +37,14 @@ const Header = () => {
     <div className={!show? 'header': 'header transparent'}>
       <div className='bar'>
       <img src={logo} alt='logo' className='logo' onClick={()=> Navigate('/')}/>
-      <ul className='navigate'>
+     {screen? (<ul className='navigate'>
         <li >Inicio</li>
         <li >Series</li>
         <li >Peliculas</li>
         <li >Novedades populares</li>
         <li >Mi lista</li>
         <li >Explorar por idiomas</li>
-      </ul>
+      </ul>): null}
       <div className='avatar-Caret'>
         <AnimatePresence>
         {
