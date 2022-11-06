@@ -133,3 +133,39 @@ li:hover{
 .uno{
     margin: 0px 10px;
 }
+@media screen and (max-width: 660px) {
+   .icon-1{
+    display: none;
+   }
+   .motionDiv{
+    display: none;
+   }
+   .avatar{
+    display: none;
+   }
+   .CaretDown{
+    display: none;
+   }
+   div.bar{
+    position: fixed !important;
+    width: 330px !important;
+    margin: 0 0;
+    left: -20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+   }
+   div.header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 5px;
+    width: 380px !important;
+   }
+   .div-flog{
+    position: relative;
+    left: 120px;
+   }
+
+}

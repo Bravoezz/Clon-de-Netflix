@@ -9,6 +9,7 @@ import {AnimatePresence, motion } from 'framer-motion';
 import {IoMdNotifications} from 'react-icons/io';
 import {CgSearch} from 'react-icons/cg'
 import { InputBase } from '@material-ui/core';
+import Despleg from './Despleg';
 
 
 const Header = ({screen}) => {
@@ -24,9 +25,11 @@ const Header = ({screen}) => {
       else setShow(false);
     }
     React.useEffect(()=>{
+      console.log(screen)
       window.addEventListener('scroll',scrollHandler)
       return ()=> window.removeEventListener('scroll', scrollHandler);
-    },[])
+      
+    },[screen])
 
     const handleOver = ()=>{
       setPollito(true)
@@ -37,14 +40,14 @@ const Header = ({screen}) => {
     <div className={!show? 'header': 'header transparent'}>
       <div className='bar'>
       <img src={logo} alt='logo' className='logo' onClick={()=> Navigate('/')}/>
-     {screen? (<ul className='navigate'>
+     {screen>560? (<ul className='navigate'>
         <li >Inicio</li>
         <li >Series</li>
         <li >Peliculas</li>
         <li >Novedades populares</li>
         <li >Mi lista</li>
         <li >Explorar por idiomas</li>
-      </ul>): null}
+      </ul>): <div className='div-flog'><Despleg /></div>}
       <div className='avatar-Caret'>
         <AnimatePresence>
         {

@@ -1,6 +1,7 @@
  const initialState = {
     email:"",
-    password:""
+    password:"",
+    boolean:0
 }
 
 function Reducer (state = initialState, action){
@@ -16,7 +17,11 @@ function Reducer (state = initialState, action){
                 ...state,
                 password: action.payload
             }
-
+        case 'INBOOLEAN':
+            return{
+                ...state,
+                boolean: action.payload
+            }
         default:
             return{...state}
     }
