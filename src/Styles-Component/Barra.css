@@ -1,0 +1,96 @@
+.content {
+    position: fixed;
+    z-index: 9999 !important;
+    top: 0px;
+    right: 0px;
+    width: 190px;
+    height: 360vw;
+    padding: 0px 40px;
+    padding-top: 5px !important;
+    background: rgba(172, 167, 167, 0.055);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 15px 10px rgba(0, 0, 0, 1);
+    border-radius: 8px;
+    z-index: 1;
+    transform: 0.5s;
+    color: #fff;
+    display: flex;
+   padding-bottom: 5px;
+    align-items: center;
+    flex-direction: column;
+   }
+   .ul{
+    height: 50%;
+    margin-top: 50px;
+    margin-bottom: 5px;
+   }
+   .ul1{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+   }
+   .li{
+    font-size: 20px;
+    color: rgb(223, 221, 221);
+    text-shadow: 5px 5px 4px black;
+    
+   }
+   
+
+   .spinner {
+   
+    
+    height: 50px;
+    width: max-content;
+    font-family: monospace;
+    letter-spacing: 1em;
+    font-weight: 600;
+    filter: drop-shadow(5px 5px  1px rgb(8, 8, 8));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   
+   .spinner span {
+    animation: loading6454 1.75s ease infinite;
+    margin: 0 -4px;
+    color: rgb(175, 14, 14);
+    font-size: 30px;
+    font-weight: bolder;
+    text-shadow: 3px 3px 1px rgb(25, 24, 24);
+
+   }
+   
+   .spinner span:nth-child(2) {
+    animation-delay: 0.25s;
+   }
+   
+   .spinner span:nth-child(3) {
+    animation-delay: 0.5s;
+   }
+   
+   .spinner span:nth-child(4) {
+    animation-delay: 0.75s;
+   }
+   
+   .spinner span:nth-child(5) {
+    animation-delay: 1s;
+   }
+   
+   .spinner span:nth-child(6) {
+    animation-delay: 1.25s;
+   }
+   
+   .spinner span:nth-child(7) {
+    animation-delay: 1.5s;
+   }
+   
+   @keyframes loading6454 {
+    0%, 100% {
+     transform: translateY(0);
+    }
+   
+    50% {
+     transform: translateY(-10px);
+    }
+   }

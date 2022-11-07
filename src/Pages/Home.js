@@ -6,13 +6,13 @@ import requests from '../Requests';
 //import styles
 import '../Estyles-Pages/Home.css'
 import Rows from '../Componentes/Rows.js';
-import { useDispatch, useSelector } from 'react-redux';
-import { inBoolean } from '../redux/actions';
+import {useSelector } from 'react-redux';
+import Barra from '../Componentes/Barra';
+import { AnimatePresence } from 'framer-motion';
 
 const Home = () => {
   const {email,boolean} = useSelector((state)=> state);
   const [screen,setScreen] = useState(null)
-  const dispatch = useDispatch();
   React.useEffect(()=>{
     console.log(email)
     const hola = window.screen.width
@@ -26,11 +26,13 @@ const Home = () => {
     <div className='Home'>
         
         <Header screen={screen} />
+        <AnimatePresence>
         {
-          boolean % 2 !== 0?(<button
-            onClick={()=> dispatch(inBoolean(false))}
-            style={{margin:'0 100px',position:'fixed',top:'300px',zIndex:99900}}>holladdddda</button>):null
+          boolean % 2 !== 0?(
+          <Barra />
+          ):null
         }
+        </AnimatePresence>
         <Banner />
         <div className='contain-rows'>
         <Rows title={'Originales de Netflix'} genero_url={requests.fetchNetflixOriginals} esPrimero/>

@@ -148,24 +148,26 @@ li:hover{
    }
    div.bar{
     position: fixed !important;
-    width: 330px !important;
+    width: 100% !important;
     margin: 0 0;
-    left: -20px;
+    padding-left: 40px;
+    
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
    }
    div.header{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 0 5px;
-    width: 380px !important;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    width: 100vw;
    }
    .div-flog{
     position: relative;
     left: 120px;
+   }
+   img#logo11{
+    margin-left: 10px;
    }
 
 }

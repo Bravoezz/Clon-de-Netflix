@@ -11,6 +11,8 @@ input[type = "checkbox"] {
     width: 50px;
     height: 40px;
     margin: 0px 0px;
+    margin-right: 40px;
+    
   }
   
   .bar-2 span {
@@ -26,6 +28,7 @@ input[type = "checkbox"] {
   
   .bar-2 span.top {
     top: 0;
+    
   }
   
   .bar-2 span.middle {
@@ -55,6 +58,7 @@ input[type = "checkbox"] {
     transform: translateX(-20px);
     opacity: 0;
   }
+  
   @media screen and (min-width: 660px) {
         .bar-2{
             display: none;

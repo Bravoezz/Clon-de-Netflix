@@ -39,7 +39,7 @@ const Header = ({screen}) => {
   return (
     <div className={!show? 'header': 'header transparent'}>
       <div className='bar'>
-      <img src={logo} alt='logo' className='logo' onClick={()=> Navigate('/')}/>
+      <img src={logo} alt='logo' className='logo' id='logo11' onClick={()=> Navigate('/')}/>
      {screen>560? (<ul className='navigate'>
         <li >Inicio</li>
         <li >Series</li>
@@ -114,7 +114,7 @@ const Header = ({screen}) => {
             setPollito(false)
           },1000)
         }}
-        className='poll'>
+        className='poll'>          
         <AiOutlineCaretDown className='icon-3'/>
        <div 
         className='poll-1'

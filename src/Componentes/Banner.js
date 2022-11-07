@@ -17,7 +17,7 @@ const Banner = () => {
         const promesa = await axios.get(`${instance}${requests.fetchNetflixOriginals}`)
         const coso = promesa.data.results
         setPelicula(coso[Math.floor(Math.random()*coso.length -1 )])
-   
+        
       }catch (error){
         console.error(error)
       }
@@ -25,12 +25,11 @@ const Banner = () => {
     fetchPelis()
   },[])
   
-  
   return (
     <div className={classes.root}
     id='banner-contain'
       style={{
-        backgroundImage: `url("https://image.tmdb.org/t/p/original${pelicula?.backdrop_path}")`,
+        backgroundImage: `url("https://image.tmdb.org/t/p/original${window.screen.width < 600?pelicula.poster_path:pelicula.backdrop_path}")`,
         position: 'relative',
         objectFit: 'contain',
         backgroundSize: 'cover',
